@@ -3,6 +3,7 @@
 	box-sizing: border-box;
 	margin:0px;
 	padding:0px;
+	font-family:helvetica;
 }
 nav
 {
@@ -99,6 +100,10 @@ table,th,td
 	border:2px solid white;
 	border-collapse:collapse;
 } 
+td,th
+{
+	padding:8px;
+}
 footer
 {
 	text-align:center;
@@ -156,7 +161,7 @@ footer
 
 }
 /*XS-Small-device*/
-@media(max-width:570px)
+@media(min-width:531px) and (max-width:570px)
 {
     .p
     {
@@ -178,16 +183,17 @@ footer
     }
     h1
     {
-    	width:30%;
+    	width:25%;
+    	font-size:25px;
     }
     nav ul
     {
-    	width:60%;
+    	width:50%;
     }
     nav ul li
     {
     	padding:5px;
-    	font-size:22px;
+    	font-size:18px;
     }
     .footer
     {
@@ -196,11 +202,12 @@ footer
     }
 
 }
-@media(max-width:525px)
+@media(max-width:532px)
 {
 	.p
     {
-    	margin-left:180px;
+    	margin-left:150px;
+    	font-size:20px;
     }
     h1
     {
@@ -211,12 +218,41 @@ footer
     nav ul
     {
     	width:60%;
+    	margin:-20px 10px 10px;
     }
     nav ul li
     {
-    	padding:5px;
-    	font-size:20px;
+    	padding:15px 5px 10px 5px;
+    	font-size:18px;
     }
-
+    .sub-div
+    {
+	    margin:100px 100px 100px 70px;
+	    font-size:18px;
+    }
+    #t
+    {
+    	font-size:18px;
+    	padding-top:15px;
+    }
+    h2
+    {
+	    font-size:20px;
+	    text-align: center;
+    }
+    .intro
+    {
+    	background-image: url('img-2.jpg');
+    	width:577px;
+    }
+    nav,footer,.sub
+    {
+    	width:577px;
+    }
+    .footer
+    {
+	   color: #48fb47;
+	   font-size:20px;
+    }
 
 }
